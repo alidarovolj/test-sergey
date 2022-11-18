@@ -6,7 +6,7 @@
           <p
             :class="{ 'border-b-3 border-mainColor': index == 2 }"
             class="py-4 mx-3 lg:mx-6"
-            v-for="(item, index) of 4"
+            v-for="(item, index) of renderContent"
             :key="index"
           >
             Текст
@@ -23,6 +23,16 @@
 
 <script>
 export default {
-  name: 'chooseBlock'
-}
+  name: "chooseBlock",
+  props: ["blocksData", "amountOfObjects"],
+  computed: {
+    renderContent() {
+      if (this.blocksData) {
+        return this.blocksData;
+      } else {
+        return this.amountOfObjects;
+      }
+    },
+  },
+};
 </script>

@@ -1,15 +1,15 @@
 <template>
-  <staticHeader />
+  <StaticHeader />
   <router-view />
 </template>
 
 <script>
-import staticHeader from "./components/staticHeader.vue";
+import StaticHeader from "./components/StaticHeader.vue";
 
 export default {
   name: "App",
   components: {
-    staticHeader,
+    StaticHeader,
   },
 };
 </script>
