@@ -1,6 +1,6 @@
 import { createRouter, createWebHistory } from "vue-router";
-import MainView from "../views/Home/indexPage.vue";
-import MailForum from "../views/MailForum/indexPage.vue";
+import MainView from "@/views/Home/IndexPage.vue";
+import MailForum from "@/views/MailForum/IndexPage.vue";
 
 const routes = [
   {
@@ -10,7 +10,7 @@ const routes = [
   },
   {
     path: "/mailForum",
-    name: "Home",
+    name: "MailForum",
     component: MailForum,
   },
 ];
