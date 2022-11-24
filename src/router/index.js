@@ -1,5 +1,6 @@
-import { createRouter, createWebHashHistory } from "vue-router";
-import MainView from "../views/Home/MainView.vue";
+import { createRouter, createWebHistory } from "vue-router";
+import MainView from "../views/Home/indexPage.vue";
+import MailForum from "../views/MailForum/indexPage.vue";
 
 const routes = [
   {
@@ -7,10 +8,15 @@ const routes = [
     name: "Home",
     component: MainView,
   },
+  {
+    path: "/mailForum",
+    name: "Home",
+    component: MailForum,
+  },
 ];
 
 const router = createRouter({
-  history: createWebHashHistory(),
+  history: createWebHistory(),
   routes,
 });
 

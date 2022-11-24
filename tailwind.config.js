@@ -10,6 +10,11 @@ module.exports = {
         player: "#EBF2FF",
         notification: "#FF2E53",
         closedText: "#828282",
+        blockHeader: "#686D7B",
+        ellipsis: "#A9B0C2",
+        aboutCompany: "#F2F2F2",
+        active: "#37D777",
+        activeBg: "#BFF9D6",
       },
       fontSize: {
         xxs: "10px",
